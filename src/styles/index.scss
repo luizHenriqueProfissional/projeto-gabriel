@@ -1,0 +1,114 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+body{
+  background-color:#000;
+  margin-top: 200px;
+}
+header>.container
+section>.container{
+  justify-content: space-between;
+  align-items: center;
+}
+.container{
+  width: 100%;
+}
+.image-principal{
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  max-width: 250px;
+}
+.title-page{
+  text-align: center;
+  margin-bottom: 15px;
+  color: #dcdde1;
+}
+.subititle-page{
+  text-align: center;
+  color: #dcdde1;
+}
+
+
+li{
+  list-style: none;
+}
+
+.page-images-icon {
+  display: flex;
+  max-width: 100px;
+  margin-bottom: 15%;
+
+  .page-icon{
+      transition: all ease .2s;
+      margin: 20px 10px;
+      &:hover{
+          transform: scale(1.5);
+      }
+  }
+}
+footer{
+  text-align: center;
+  width: 100%;
+  background-color: #000;
+  padding: 30px;
+  margin-top: 120px;
+  color: #fff;
+}
+.event{
+  padding: 80px 0;
+
+  &--frontend{
+      background-image:linear-gradient(#000, #04235e);
+  }
+  &--ux-ui{
+      background-image:linear-gradient(#04235e, #0a0b3f);
+  }
+  &--data-science{
+      background-image:linear-gradient(#0a0b3f, #0a0e41);
+  }
+  &--backend{
+      background-image:linear-gradient(#0a0e41, #000 );
+  }
+
+  &--image-left{
+      .container{
+          flex-direction: row-reverse;
+          
+      }
+  }
+
+  .container{
+      display: flex;
+      gap: 20px;
+
+  }
+
+  &__details{
+      color: #fff;
+      &__title{
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 16px;
+          margin-left: 100px;
+          margin-right: 100px;
+          
+      }
+      &__description{
+        margin-left: 100px;
+        margin-right: 100px;
+          line-height:22px;
+      }
+  }
+
+  &__image{
+    margin-left: 100px;
+    margin-right: 100px;
+      max-width: 360px;
+      border-radius: 20px;
+  }
+}
